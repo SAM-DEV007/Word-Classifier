@@ -5,4 +5,4 @@
   The dataset is custom made with the help of internet to get various transcripts. The model reaches 2% validation loss and
   84% validation accuracy. But, the dataset is too small and can be modified to improve.
 
-  **IF THE MODEL FAILS TO DOWNLOAD, REFER TO [HERE](Model_Data/README.md)**.
+  **IF THE MODEL FAILS TO DOWNLOAD UPON INITIAL LAUNCH, REFER TO [HERE](Model_Data/README.md)**.
