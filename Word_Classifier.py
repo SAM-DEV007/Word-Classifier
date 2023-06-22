@@ -7,6 +7,7 @@ import numpy as np
 import os
 import requests
 import sys
+import traceback
 
 
 def download_model(id, destination):
@@ -41,7 +42,8 @@ def download_model(id, destination):
                 if chunk:
                     datasize = f.write(chunk)
                     progress.update(datasize)
-    except:
+    except BaseException as err:
+        traceback.print_exc()
         if os.path.exists(destination): os.remove(destination)
         exit()
 
