@@ -23,7 +23,7 @@ if __name__ == '__main__':
     model.add(hub_layer)
     model.add(tf.keras.layers.Dense(32, activation='relu'))
     model.add(tf.keras.layers.Dense(16, activation='relu'))
-    model.add(tf.keras.layers.Dense(3, activation='softmax'))
+    model.add(tf.keras.layers.Dense(4, activation='softmax'))
 
     model.summary()
 
