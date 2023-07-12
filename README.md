@@ -5,6 +5,7 @@
  - **N/A**: This indicates that the sentence is recognized as neither the rest of the two.
  - **Saying Hi**: This indicates that the sentence is approaching with the introductory behaviour.
  - **Borrow Money**: This indicates that the sentence is focused towardds borrowing money.
+ - **YouTube Interaction**: This indicates that the sentence is related to Youtube community interaction.
 
  `Word_Classifier.py` can be used to launch the application. The model will be downloaded upon the initial launch. **IF THE
  MODEL FAILS TO DOWNLOAD, REFER TO [HERE](Model/Model_Data/README.md)**.
