@@ -2,7 +2,7 @@
  This project is based on the extracting specific "Word of Interest" from the sentence provided. The categories are as follows - 
  N/A, Saying Hi and Borrow Money. 
 
- - **N/A**: This indicates that the sentence is recognized as neither the rest of the two.
+ - **N/A**: This indicates that the sentence is recognized as neither the rest of the three.
  - **Saying Hi**: This indicates that the sentence is approaching with the introductory behaviour.
  - **Borrow Money**: This indicates that the sentence is focused towardds borrowing money.
  - **YouTube Interaction**: This indicates that the sentence is related to Youtube community interaction.
