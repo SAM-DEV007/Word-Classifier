@@ -13,5 +13,32 @@
  More information on the model can be found [here](Model/README.md).
 
 # Installation
- - Python 3.x or greater is required.
- - Dependant libraries: `pip install -r path/to/requirements.txt`.
+## Python version
+Python 3.x or greater is required.
+
+## Clone the repository
+```bash
+git clone https://github.com/SAM-DEV007/Word-Classifier.git
+cd Word-Classifier
+```
+
+## Create a virtual environment
+```bash
+pip install virtualenv
+python -m venv .venv
+```
+
+## Activate vitrual environment
+### Windows
+```bash
+./venv/Scripts/activate
+```
+### Linux/Mac
+```bash
+source venv/bin/activate
+```
+
+## Install Dependencies
+```bash
+pip install -r requirements.txt
+```
