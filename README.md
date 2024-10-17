@@ -12,6 +12,11 @@
 
  More information on the model can be found [here](Model/README.md).
 
+## Use Case
+This model is trained on a very small dataset with only three categories of words to classify with the given sentence. It can be greatly enhanced for larger datasets to perform classfication on multiple sentences. This can work as an extension of sentiment analysis. The sentences can be classified to sentiments, not restricted to only negative or positive. It can be used in many industries like finanace, health and customer service mainly chatbots.
+
+It can majorly help in detecting or classifying user-defined words from long sentences. The main application can be with sentiments and text transcription of the calls made to emergency hotline. It can classify and decide the emergency and can be trained for multiple emergency scenarios aswell. 
+
 # Installation
 ## Python version
 Python 3.x or greater is required.
@@ -42,3 +47,20 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+# Web Integration
+Refer to [here](https://github.com/SAM-DEV007/ML-Web-Integration/tree/main/word_classifier) for the file structure and script changes made for Django.
+
+*NOTE: It is strongly recommended to setup bash or python script to download model via Google API from the Google Drive link for the server implementation. **DO NOT RELY ON THE `download_model` FUNCTION GIVEN IN `Word_Classifier.py` AS GOOGLE HAS CHANGED THE METHOD FOR REMOTE DOWNLOAD FROM DRIVE, ESPECIALLY OF LARGE FILES.***
+
+The following steps can be followed **AFTER DOWNLOADING THE MODEL** to integrate the model in a web application:
+1. Change `if __name__ == __main__:` to a function, so that the model prediction can be called repeatedly and can be imported to different scritps.
+2. `txt = input("Enter your message: ")` can be changed to accept string from the frontend.
+3. After modifications, `Word_Classifier.py` can be used as it is for the prediction.
+
+Information on the main functions:
+
+- `txt_arg` is a list of words that can be predicted.
+- `model.predict([txt])` returns the array of probabilities of each index to be the predicted result.
+- `result` contains the index of the prediction with the highest probability.
+- `txt_arg[result]` will generate the predicted result.
